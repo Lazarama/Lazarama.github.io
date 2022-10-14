@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Тут назва </title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<style type="text/css">
+			.divvv_class {
+				display: grid;
+				grid-template-columns: 19% 81%;
+				grid-template-areas:
+			    "nav main"
+			    "nav main";
+			}
+			.div1_class {
+				grid-area: nav;
+			}
+			.div2_class{
+				grid-area: main;
+				display: flex;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="navbar navbar-expand-lg bg-success p-2 text-dark bg-opacity-25 border border-success">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link active fs-5" aria-current="page" style="margin-right: 35px;" href="#">Головна сторінка</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle text-dark fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Каталог
+		          </a>
+		          <ul class="dropdown-menu">
+			        <li><a class="dropdown-item" href="#">Ліфчики</a></li>
+			       	<li><a class="dropdown-item" href="#">Майки</a></li>
+			        <li><a class="dropdown-item" href="#">Труси</a></li>
+			        <li><a class="dropdown-item" href="#">Футболки</a></li>
+			        <li><hr class="dropdown-divider"></li>
+			        <li><a class="dropdown-item" href="#">Всі товари</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link fs-5" href="#">Посилання</a>
+		        </li>
+		    </ul>
+		    <form class="d-flex" role="search">
+		    	<input class="form-control me-2" type="search" placeholder="Що ви шукаєте?" aria-label="Search">
+		        <button class="btn btn-outline-success" type="submit">Пошук</button>
+		    </form>
+		    <button type="button" class="btn btn-outline-success" style="margin-left: 30px;">
+		    	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+					<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+				</svg>
+			</button>
+			<button type="button" class="btn btn-outline-success" style="margin-left: 5px;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+  					<path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z"/>
+				</svg>
+			</button>
+			<button type="button" class="btn btn-outline-success" style="margin-left: 5px;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+  					<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+				</svg>
+			</button>
+		    </div>
+		  </div>
+		</header>
+		<main>
+			<div class="divvv_class" style="margin-bottom: 20px;">
+				<div class="main_bar" >
+					<div class="div1_class bg-success bg-opacity-25 text-dark border-end border-success">
+						<div>
+							<hr class="text-success border-success border-2 opacity-100">
+							<div class="form-check form-switch form-check-reverse" style="margin-right: 20px; font-size: 20px;">
+							 	<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+							 	<label class="form-check-label" for="flexSwitchCheckDefault">Акційні товари</label>
+							</div>
+							<hr class="text-success border-success border-2 opacity-100">
+							<div class="form-check form-switch form-check-reverse" style="margin-right: 20px; font-size: 20px;">
+							 	<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+							 	<label class="form-check-label" for="flexSwitchCheckDefault">Нові товари</label>
+							</div>
+						</div>
+						<div>
+							<hr class="text-success border-success border-2 opacity-100">
+					    	<p style="font-size: 23px;"> Принадлежність </p>
+					   		<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Дівчатам</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Жікам</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Унісекс</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Хлопчикам</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Чоловікам</label>
+							</div>
+						</div>
+						<div>
+							<hr class="text-success border-success border-2 opacity-100">
+							<p style="font-size: 23px;"> Вид </p>
+					   		<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Бандаж</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Боді</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Бюстгальтер</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Комплект</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Майка</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Топ</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Труси</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">Футболка</label>
+							</div> 
+						</div>
+						<div>
+							<hr class="text-success border-success border-2 opacity-100">
+							<p style="font-size: 23px;"> Таблиця розмірів </p>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+							  <label class="form-check-label" for="inlineCheckbox1">34-36</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+							  <label class="form-check-label" for="inlineCheckbox2">38-40</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+							  <label class="form-check-label" for="inlineCheckbox3">42-44</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+							  <label class="form-check-label" for="inlineCheckbox4">46-48</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+							  <label class="form-check-label" for="inlineCheckbox5">50-52</label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+							  <label class="form-check-label" for="inlineCheckbox6">54-56</label>
+							</div>
+							<hr class="text-success border-success border-2 opacity-100">
+						</div>
+						<div>
+							<p style="font-size: 23px;"> Ціна </p>
+					   		<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">до 200 грн</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">200 - 500 грн</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">500 - 1000 грн</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">від 1000 грн</label>
+							</div>
+							<hr class="text-success border-success border-2 opacity-100">
+						</div>
+					</div>
+				</div>
+				<div class="main_product">
+					<div class="div2_class" style="margin-top: 20px">
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/2226/2226472.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Ліфчик">
+							<p class="text-center"> Ліфчик 1 </p>
+						</div>
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/2405/2405697.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Ліфчик">
+							<p class="text-center"> Ліфчик 2 </p>
+						</div>
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/418/418087.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Ліфчик"> 
+							<p class="text-center"> Ліфчик 3 </p>
+						</div>
+						<div type="button">
+							<img src="https://cdn-icons-png.flaticon.com/512/976/976213.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Ліфчик"> 
+							<p class="text-center"> Ліфчик 4 </p>
+						</div>
+					</div>
+					<div class="div2_class" >
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/2348/2348155.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Майка">
+							<p class="text-center"> Майка 1 </p>
+						</div>
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/2846/2846866.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Майка">
+							<p class="text-center"> Майка 2 </p>
+						</div>
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/1805/1805060.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Майка"> 
+							<p class="text-center"> Майка 3 </p>
+						</div>
+						<div type="button">
+							<img src="https://cdn-icons-png.flaticon.com/512/418/418069.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Майка"> 
+							<p class="text-center"> Майка 4 </p>
+						</div>
+					</div>
+					<div class="div2_class" >
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/8153/8153822.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Труси">
+							<p class="text-center"> Труси 1 </p>
+						</div>
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/1007/1007779.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Труси">
+							<p class="text-center"> Труси 2 </p>
+						</div>
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/160/160600.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Труси"> 
+							<p class="text-center"> Труси 3 </p>
+						</div>
+						<div type="button">
+							<img src="https://cdn-icons-png.flaticon.com/512/2970/2970169.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Труси"> 
+							<p class="text-center"> Труси 4 </p>
+						</div>
+					</div>
+					<div class="div2_class" >
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/863/863684.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Футболка">
+							<p class="text-center"> Футболка 1 </p>
+						</div>
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/2093/2093848.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Футболка">
+							<p class="text-center"> Футболка 2 </p>
+						</div>
+						<div type="button"> 
+							<img src="https://cdn-icons-png.flaticon.com/512/1867/1867631.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Футболка"> 
+							<p class="text-center"> Футболка 3 </p>
+						</div>
+						<div type="button">
+							<img src="https://cdn-icons-png.flaticon.com/512/917/917981.png" class="img-thumbnail border-success rounded mx-auto d-block" width="66%" alt="Футболка"> 
+							<p class="text-center"> Футболка 4 </p>
+						</div>
+					</div>
+					<nav aria-label="Page navigation example">
+					 	<ul class="pagination justify-content-center">
+						    <li class="page-item">
+						      <a class="page-link border-success text-dark" href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li class="page-item"><a class="page-link border-success text-dark" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link border-success text-dark" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link border-success text-dark" href="#">3</a></li>
+						    <li class="page-item">
+						      <a class="page-link border-success text-dark" href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</main>
+		<footer class=" navbar-expand-lg bg-success p-2 text-dark bg-opacity-25 border border-success">
+			<ul class="nav justify-content-left" style="font-size: 12px;">
+			  <li class="nav-item" style="margin-right: 20px;">
+			    <a class="nav-link text-dark" aria-current="page" href="#">Про компанію</a>
+			    <a class="nav-link active text-dark" aria-current="page" style="margin-top: -12px;" href="#" style="">Наші контакти</a>
+			    <a class="nav-link active text-dark" aria-current="page" style="margin-top: -12px;" href="#" style="">Про магазин</a>
+			  </li>
+			  <li class="nav-item" style="margin-right: 20px;">
+			    <a class="nav-link text-dark" href="#">Акції</a>
+			    <a class="nav-link text-dark" style="margin-top: -12px;" href="#">Бонуси</a>
+			  </li>
+			  <li class="nav-item" style="margin-right: 20px;">
+			    <a class="nav-link text-dark" href="#">Доставка</a>
+			    <a class="nav-link text-dark" style="margin-top: -12px;" href="#">Повернення</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link disabled text-muted" style="font-size: 11px;" href="#">0123456789 (робочий номер телефону)</a>
+			    <a class="nav-link disabled text-muted" style="font-size: 11px;" href="#">NazvanieMagazina@gmail.com (робоча пошта)</a>
+			  </li>
+			</ul>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+		</script>
+	</body>
+</html>
